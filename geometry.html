@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>車架幾何 - 自行車 Fitting 指南</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>自行車 Fitting 指南</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="data-collection.html">數據採集</a></li>
+                <li><a href="kinematics.html">運動學基準</a></li>
+                <li><a href="geometry.html">車架幾何</a></li>
+                <li><a href="components.html">零件調整</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="geometry">
+            <h2>第 4 節：公路車車架幾何全解析</h2>
+            <p>本節內容將作為應用程式內的教育模組，幫助使用者理解複雜的車架幾何數據表，並明確區分影響「騎乘姿勢」的幾何與影響「操控感受」的幾何。</p>
+
+            <h3>4.1 姿勢幾何（Fit Geometry）：決定騎士的身體位置</h3>
+            <ul>
+                <li><strong>Stack（堆高量）與 Reach（前伸量）：</strong> 這是定義車架尺寸最核心的兩個數據 。
+                    <ul>
+                        <li>如何測量： Stack 是從五通中心點（Bottom Bracket Center）到頭管頂部中心點（Top of Head Tube Center）的垂直距離。Reach 則是這兩個點之間的水平距離 。這兩個數值共同定義了騎士上半身的伸展空間。較高的 Stack/Reach 比值（大於 1.5）意味著更直立、舒適的耐力型幾何；較低的比值（小於 1.45）則代表更低趴、激進的競賽型幾何 。</li>
+                    </ul>
+                </li>
+                <li><strong>有效上管長度（Effective Top Tube Length）：</strong>
+                    <ul>
+                        <li>如何測量： 從頭管頂部中心點畫一條水平線，延伸至與座管中心線相交處，此水平線的長度即為有效上管長度 。在現代壓縮式車架上，其參考價值不如 Stack 與 Reach 精確 。</li>
+                    </ul>
+                </li>
+                <li><strong>立管角度（Seat Tube Angle）：</strong>
+                    <ul>
+                        <li>如何測量： 以水平線為基準（0 度），測量立管中心線與水平線所夾的角度。通常介於 71 至 74 度之間 。較大的角度（更陡直）會使騎士重心更靠前，有利於高踏頻發力 。</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>4.2 操控幾何（Handling Geometry）：決定自行車的騎乘感受</h3>
+            <ul>
+                <li><strong>頭管角度（Head Tube Angle）：</strong>
+                    <ul>
+                        <li>如何測量： 以水平線為基準（0 度），測量頭管中心線（即轉向軸線）與水平線所夾的角度 。較大的角度（更陡直，約 73 度以上）使轉向反應更靈敏；較小的角度（更平緩，約 72.5 度以下）則提供更穩定的直線循跡性 。</li>
+                    </ul>
+                </li>
+                <li><strong>前叉偏移量（Fork Rake/Offset）與循跡距離（Trail）：</strong>
+                    <ul>
+                        <li>如何測量： 前叉偏移量是前輪軸心到頭管中心延長線（轉向軸線）之間的垂直距離。循跡距離則是轉向軸線與地面交會點，和前輪胎面與地面接觸點之間的水平距離 。更大的循跡距離意味著車輛具有更強的「自我回正」趨勢，操控更穩定 。</li>
+                    </ul>
+                </li>
+                <li><strong>軸距（Wheelbase）與後下叉長度（Chainstay Length）：</strong>
+                    <ul>
+                        <li>如何測量： 軸距是前輪軸心與後輪軸心之間的水平距離。後下叉長度則是五通中心到後輪軸心的距離 。更長的設定能提升直線穩定性 。</li>
+                    </ul>
+                </li>
+                <li><strong>五通下沉量（Bottom Bracket Drop）：</strong>
+                    <ul>
+                        <li>如何測量： 畫一條連接前後輪軸心的水平線，測量五通中心低於這條線的垂直距離 。更大的下沉量會降低整車重心，提升過彎穩定性 。</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>表 4.1：公路車幾何參數解析：姿勢 vs. 操控</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>參數</th>
+                        <th>定義</th>
+                        <th>主要影響</th>
+                        <th>典型競賽型設定</th>
+                        <th>典型耐力型設定</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5"><strong>姿勢幾何</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Stack (堆高量)</td>
+                        <td>五通中心至頭管頂端的垂直距離</td>
+                        <td>騎士上半身的直立程度</td>
+                        <td>較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>Reach (前伸量)</td>
+                        <td>五通中心至頭管頂端的水平距離</td>
+                        <td>騎士上半身的伸展程度</td>
+                        <td>較長</td>
+                        <td>較短</td>
+                    </tr>
+                    <tr>
+                        <td>立管角度</td>
+                        <td>立管與水平線的夾角</td>
+                        <td>騎士相對於五通的前後位置</td>
+                        <td>較陡 (>$73.5^{\circ}$)</td>
+                        <td>較緩 (<$73^{\circ}$)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>操控幾何</strong></td>
+                    </tr>
+                    <tr>
+                        <td>頭管角度</td>
+                        <td>頭管與水平線的夾角</td>
+                        <td>轉向的靈敏度與穩定性</td>
+                        <td>較陡 (>$73^{\circ}$)</td>
+                        <td>較緩 (<$72.5^{\circ}$)</td>
+                    </tr>
+                    <tr>
+                        <td>循跡距離 (Trail)</td>
+                        <td>前輪接地點與轉向軸線的偏移</td>
+                        <td>直線穩定性</td>
+                        <td>較短 (~55-58 mm)</td>
+                        <td>較長 (~59-63 mm)</td>
+                    </tr>
+                    <tr>
+                        <td>軸距 (Wheelbase)</td>
+                        <td>前後輪軸心之間的距離</td>
+                        <td>整體穩定性</td>
+                        <td>較短</td>
+                        <td>較長</td>
+                    </tr>
+                    <tr>
+                        <td>五通下沉量 (BB Drop)</td>
+                        <td>五通中心低於輪軸連線的距離</td>
+                        <td>過彎穩定性</td>
+                        <td>較小 (~68-70 mm)</td>
+                        <td>較大 (~72-80 mm)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 自行車 Fitting 指南</p>
+    </footer>
+</body>
+</html>
